@@ -3,7 +3,13 @@ function inserirTexto(texto) {
     footer.innerHTML += "<p>" + texto + "</p>";
 }
 
+function limpar(){
+    var footer = document.getElementById("footer");
+    footer.innerHTML = "";
+}
+
 function testeVariavel(){
+    limpar();
     var repeti = document.getElementById('texto').value;
 
     var n1 = 1, n2 =1, nxn;
